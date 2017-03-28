@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DB" />
+        <module name="JDBC" />
         <module name="JPA" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DB" target="1.5" />
+      <module name="JDBC" target="1.5" />
       <module name="JPA" target="1.5" />
       <module name="Proff" target="1.5" />
     </bytecodeTargetLevel>
