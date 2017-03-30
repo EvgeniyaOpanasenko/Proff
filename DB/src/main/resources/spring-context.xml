@@ -9,10 +9,11 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
-<!-- to use annotations  as markers in y class-->
+    <!-- to use annotations  as markers in y class-->
     <tx:annotation-driven />
     <!--autoproxy -->
     <aop:aspectj-autoproxy/>
+
     <!--to use annotations -->
     <context:annotation-config/>
     <!--location of scanning entities Hibernate issue-->
@@ -29,10 +30,10 @@
     <!--creating the entity which knows how to create entity manager-->
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="packagesToScan" value="ua.com.model" />
+        <property name="packagesToScan" value="ua.com" />
         <property name="jpaVendorAdapter">
 
-            <!--JPA need to use it -->
+            <!--JPA needs to use it -->
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
         </property>
         <property name="jpaProperties">
@@ -44,7 +45,7 @@
         </property>
     </bean>
 
-<!--is used by entity manager in order to use transaction in DB-->
+    <!--is used by entity manager in order to use transaction in DB-->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>

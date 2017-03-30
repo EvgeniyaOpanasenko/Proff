@@ -108,14 +108,14 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.1.0.Final</version>
+            <version>${hibernate-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.1.0.Final</version>
+            <version>${hibernate-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -136,7 +136,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>4.1.4.RELEASE</version>
+            <version>${spring-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
@@ -168,6 +168,10 @@
         </dependency>
 
     </dependencies>
+    <properties>
+        <hibernate-version>5.1.0.Final</hibernate-version>
+        <spring-version>4.1.4.RELEASE</spring-version>
+    </properties>
 
 
 </project>
