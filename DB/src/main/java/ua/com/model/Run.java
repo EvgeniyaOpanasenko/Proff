@@ -15,12 +15,12 @@ public class Run {
                 new ClassPathXmlApplicationContext("spring-context.xml");
 
         MainService mainService = applicationContext.getBean(MainService.class);
-        Candidate candidate = new Candidate("service", 78, new Clan("Lvov"),
-                new Region(RegionName.KIEV), new Hobby((HobbyType.FINANCE)));
+       /* Candidate candidate = new Candidate("ivan", 78, new Clan("Partiya2"),
+                new Region(RegionName.KHARKOV), new Hobby((HobbyType.SPORT)));
 
-        mainService.createCandidate(candidate);
+        mainService.createCandidate(candidate);*/
 
-        mainService.findCandidate("ivan");
+        System.out.println(mainService.findCandidate("ivan"));
 
         //System.out.println(dao.getAll());
 
