@@ -2,7 +2,6 @@ package ua.com.test;
 
 import org.apache.log4j.Logger;
 import ua.com.model.Candidate;
-import ua.com.model.Clan;
 
 import java.sql.*;
 
@@ -53,7 +52,7 @@ public class Test_JDBC {
                 //int region = resultSet.getInt("region_id");
                 //int hobby = resultSet.getInt("hobby_id");
 
-                System.out.println(new Candidate(name, age));
+                //System.out.println(new Candidate(name, age));
 
             }
 
