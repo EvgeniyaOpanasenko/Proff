@@ -111,12 +111,26 @@
             <version>${hibernate-version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+      <!--  <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.9.Final</version>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>${hibernate-version}</version>
+            <version>5.2.1.Final</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+        <!--<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate-version}</version>
+        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
@@ -169,9 +183,10 @@
 
     </dependencies>
     <properties>
-        <hibernate-version>5.1.0.Final</hibernate-version>
+        <hibernate-version>5.2.1.Final</hibernate-version>
         <spring-version>4.1.4.RELEASE</spring-version>
     </properties>
+
 
 
 </project>
