@@ -42,28 +42,27 @@
 
 </html>
 
-   <%-- <ul>
-        <li>
-            <div class="column">
-                name : <%=transfered.getName()%>
-            </div>
-        </li>
-        <div class="column">
-            age : <%=transfered.getAge()%>
-        </div>
-        <li>
-            <div class="column">
-                hobby : <%=transfered.getHobby()%>
-            </div>
-        </li>
-        <div class="column">
-            region : <%=transfered.getRegion()%>
-        </div>
-        <li>
-            <div class="column">
-                clan : <%=transfered.getClan()%>
-            </div>
-        </li>
-    </ul>
+<%-- <ul>
+     <li>
+         <div class="column">
+             name : <%=transfered.getName()%>
+         </div>
+     </li>
+     <div class="column">
+         age : <%=transfered.getAge()%>
+     </div>
+     <li>
+         <div class="column">
+             hobby : <%=transfered.getHobby()%>
+         </div>
+     </li>
+     <div class="column">
+         region : <%=transfered.getRegion()%>
+     </div>
+     <li>
+         <div class="column">
+             clan : <%=transfered.getClan()%>
+         </div>
+     </li>
+ </ul>
 </div>--%>
-

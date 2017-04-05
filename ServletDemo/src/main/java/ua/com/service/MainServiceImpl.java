@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import ua.com.dao.CandidateDao;
 import ua.com.exceptions.NoAvaliableTableException;
 import ua.com.exceptions.NoEntityFoundException;
+import ua.com.exceptions.RegisterException;
 import ua.com.model.Candidate;
 import ua.com.model.RegionName;
 
@@ -33,14 +34,10 @@ public class MainServiceImpl implements MainService {
     }
 
     @Override
-    public String createCandidate(Candidate entity) {
-        try {
-            candidateDao.create(entity);
-        } catch (NoAvaliableTableException e) {
-            e.printStackTrace();
-        }
-        return "Ok created!";
+    public Candidate createCandidate(Candidate entity) throws RegisterException, NoAvaliableTableException {
+        return candidateDao.create(entity);
     }
+
 
     @Override
     public String findCandidate(String name) {
