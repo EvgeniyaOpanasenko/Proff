@@ -4,7 +4,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ua.com.exceptions.NoAvaliableTableException;
 import ua.com.exceptions.NoEntityFoundException;
-import ua.com.service.MainService;
 
 public class Run {
     public static void main(String[] args) throws NoEntityFoundException, NoAvaliableTableException {

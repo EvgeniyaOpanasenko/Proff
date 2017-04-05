@@ -48,6 +48,9 @@
         <module>JPA</module>
         <module>DB</module>
         <module>JDBC</module>
+        <module>SPRING</module>
+        <module>TOMCAT</module>
+        <module>ServletDemo</module>
     </modules>
 
     <dependencies>
