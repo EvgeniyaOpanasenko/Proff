@@ -1,1 +1,0 @@
-var user = {name : "oleg", age :12};
