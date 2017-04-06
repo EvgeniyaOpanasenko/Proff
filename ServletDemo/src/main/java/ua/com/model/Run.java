@@ -2,11 +2,10 @@ package ua.com.model;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ua.com.exceptions.NoAvaliableTableException;
 import ua.com.exceptions.NoEntityFoundException;
 
 public class Run {
-    public static void main(String[] args) throws NoEntityFoundException, NoAvaliableTableException {
+    public static void main(String[] args) throws NoEntityFoundException {
         ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("spring-context.xml");
 

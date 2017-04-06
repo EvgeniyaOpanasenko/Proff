@@ -3,7 +3,6 @@ package ua.com.dao;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import ua.com.exceptions.InvalidInputException;
-import ua.com.exceptions.NoAvaliableTableException;
 import ua.com.exceptions.NoEntityFoundException;
 import ua.com.model.Clan;
 
@@ -20,14 +19,14 @@ public class ClanDaoIml implements ClanDao {
 
     @Override
     @Transactional
-    public Clan create(Clan entity) throws NoAvaliableTableException {
+    public Clan create(Clan entity) {
         manager.persist(entity);
         return entity;
     }
 
     @Override
     @Transactional
-    public List<Clan> getAll() throws NoAvaliableTableException, NoEntityFoundException {
+    public List<Clan> getAll() throws NoEntityFoundException {
         TypedQuery<Clan> query = manager.createQuery("SELECT c FROM Clan c", Clan.class);
         List<Clan> clans = query.getResultList();
         return clans;
@@ -35,7 +34,7 @@ public class ClanDaoIml implements ClanDao {
 
     @Override
     @Transactional
-    public Clan findOne(Long aLong) throws InvalidInputException, NoEntityFoundException, NoAvaliableTableException {
+    public Clan findOne(Long aLong) throws InvalidInputException, NoEntityFoundException {
         List<Clan> clans = getAll();
         Clan clan = clans.stream().filter(e -> e.getId() == aLong).findFirst().get();
         return clan;

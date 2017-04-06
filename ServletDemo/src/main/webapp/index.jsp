@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: EVA
-  Date: 05.04.2017
-  Time: 15:37
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,7 +7,31 @@
 <body>
 
 <div class="header">
-    <li><a href="register">Register</a> </li>
+    <ul>
+        <li><a href="register">Register</a> </li>
+    </ul>
+
+    <c:if test="${!inSystem}">
+        <form action="login" method="post">
+            <ul>
+                <li>
+                <input name="name" type="text">
+                </li>
+
+                <li>Submit
+                    <input type="submit">
+                </li>
+            </ul>
+
+        </form>
+
+    </c:if>
+
+    <c:if test="${inSystem}">
+        <ul>
+            <li>Hello ${currentUserName}</li>
+        </ul>
+    </c:if>
 
 </div>
 </body>

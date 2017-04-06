@@ -27,7 +27,7 @@ public class CandidateDaoImpl implements CandidateDao {
     @Override
     @Transactional
     public List<Candidate> getAll() {
-        TypedQuery<Candidate> query = manager.createQuery("SELECT c FROM Canidadate c", Candidate.class);
+        TypedQuery<Candidate> query = manager.createQuery("SELECT c FROM Candidate c", Candidate.class);
         List<Candidate> candidates = query.getResultList();
         return candidates;
     }
