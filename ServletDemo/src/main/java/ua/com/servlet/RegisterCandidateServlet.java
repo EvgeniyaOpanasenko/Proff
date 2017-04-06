@@ -39,6 +39,7 @@ public class RegisterCandidateServlet extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/pages/register-candidate.jsp").forward(req, resp);
     }
 
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // waiting data from the form

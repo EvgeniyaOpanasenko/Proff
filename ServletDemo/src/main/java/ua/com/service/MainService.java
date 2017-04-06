@@ -13,7 +13,7 @@ import java.util.List;
 public interface MainService {
 
     List<Candidate> getCandidatesByAge(int minAge, int maxAge) throws NoEntityFoundException;
-    List<Candidate> getCandidatesByRegion(RegionName region) throws NoEntityFoundException;
+    List<Candidate> getAllCanidates() throws NoEntityFoundException, NoAvaliableTableException;
     Candidate createCandidate(Candidate entity) throws RegisterException, NoAvaliableTableException;
     String findCandidate(String name);
 

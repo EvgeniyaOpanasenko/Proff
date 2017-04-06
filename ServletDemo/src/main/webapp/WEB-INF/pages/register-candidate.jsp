@@ -11,15 +11,14 @@
 </head>
 <body>
 
-<form action="/register">
-
+<form method="post" action="register">
 
     Name :<br>
-    <input type="text" name="name" >
+    <input type="text" name="name">
     <br>
 
     Age :<br>
-    <input type="text" name="age" >
+    <input type="text" name="age">
     <br>
 
     Hobby :<br>

@@ -29,8 +29,8 @@ public class MainServiceImpl implements MainService {
     }
 
     @Override
-    public List<Candidate> getCandidatesByRegion(RegionName region) throws NoEntityFoundException {
-        return null;
+    public List<Candidate> getAllCanidates() throws NoEntityFoundException, NoAvaliableTableException {
+        return candidateDao.getAll();
     }
 
     @Override
