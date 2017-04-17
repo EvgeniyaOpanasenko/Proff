@@ -3,6 +3,7 @@ package ua.com.run;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ua.com.service.MainService;
+import ua.com.service.MainServiceImpl;
 import ua.com.soap.CandidateEndpointImpl;
 
 import javax.xml.ws.Endpoint;
@@ -17,7 +18,7 @@ public class RunSoapServer {
                 new ClassPathXmlApplicationContext("spring-context.xml");
 
         MainService service = applicationContext.getBean(MainService.class);
-        Endpoint.publish("http://localhost:9999/ws/eva", new CandidateEndpointImpl(service));
+        Endpoint.publish("http://localhost:9999/soap/eva", new CandidateEndpointImpl(service));
 
     }
 }

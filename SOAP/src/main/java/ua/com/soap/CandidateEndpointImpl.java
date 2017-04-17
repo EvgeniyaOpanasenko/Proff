@@ -8,7 +8,6 @@ import ua.com.service.MainService;
 import javax.jws.WebService;
 import java.util.List;
 
-//Service Implementation
 @WebService(endpointInterface = "ua.com.soap.CandidateEndpoint")
 public class CandidateEndpointImpl implements CandidateEndpoint {
 

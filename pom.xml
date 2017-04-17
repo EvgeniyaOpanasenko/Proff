@@ -49,11 +49,10 @@
         <module>DB</module>
         <module>JDBC</module>
         <module>SPRING</module>
-        <module>TOMCAT</module>
         <module>ServletDemo</module>
         <module>SOAP</module>
-        <module>SoapClient</module>
         <module>ClientSoap</module>
+
     </modules>
 
     <dependencies>
