@@ -30,7 +30,7 @@ public class LoginServlet extends MyServltet {
             req.setAttribute("errortitle", "Login error");
             req.setAttribute("errorMessage", "Invalid name");
 
-            req.getRequestDispatcher("/WEB-INF/pages/error.jsp");
+            req.getRequestDispatcher("/webapp.WEB-INF/pages/error.jsp");
         }
 
 

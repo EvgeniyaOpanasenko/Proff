@@ -18,6 +18,6 @@ public class CandidateInfoServlet extends HttpServlet {
                 new Region(RegionName.KHARKOV),
                 new Hobby(HobbyType.SPORT)));
 
-        //req.getRequestDispatcher("/WEB-INF/pages/candidate-info.jsp").forward(req, resp);
+        //req.getRequestDispatcher("/webapp.WEB-INF/pages/candidate-info.jsp").forward(req, resp);
     }
 }

@@ -3,10 +3,9 @@ package ua.com.soap;
 import ua.com.exceptions.NoEntityFoundException;
 import ua.com.exceptions.RegisterException;
 import ua.com.model.Candidate;
-import ua.com.service.MainService;
+import ua.com.Fixtures.MainService;
 
 import javax.jws.WebService;
-import java.util.List;
 
 @WebService(endpointInterface = "ua.com.soap.CandidateEndpoint")
 public class CandidateEndpointImpl implements CandidateEndpoint {

@@ -2,8 +2,7 @@ package ua.com.run;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ua.com.service.MainService;
-import ua.com.service.MainServiceImpl;
+import ua.com.Fixtures.MainService;
 import ua.com.soap.CandidateEndpointImpl;
 
 import javax.xml.ws.Endpoint;

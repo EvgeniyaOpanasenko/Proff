@@ -1,4 +1,4 @@
-package ua.com.service;
+package ua.com.Fixtures;
 
 
 

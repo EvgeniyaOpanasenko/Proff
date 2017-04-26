@@ -20,7 +20,7 @@ public class RegisterCandidateServlet extends MyServltet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //redirect to register.jsp
-        req.getRequestDispatcher("/WEB-INF/pages/register-candidate.jsp").forward(req, resp);
+        req.getRequestDispatcher("/webapp.WEB-INF/pages/register-candidate.jsp").forward(req, resp);
     }
 
     @Override
@@ -40,14 +40,14 @@ public class RegisterCandidateServlet extends MyServltet {
         if (name == null || ageString == null || hobbyString == null ||
                 clanString == null || regionString == null) {
             //resp.sendRedirect("/");
-            resp.sendRedirect("/WEB-INF/pages/error.jsp");
+            resp.sendRedirect("/webapp.WEB-INF/pages/error.jsp");
         } else {
             Candidate candidate = new Candidate(name, age, clan, region, hobby);
 
             try {
                 Candidate createCandidate = service.createCandidate(candidate);
                 req.setAttribute("candidate", createCandidate);
-                req.getRequestDispatcher("/WEB-INF/pages/candidate-info.jsp").forward(req, resp);
+                req.getRequestDispatcher("/webapp.WEB-INF/pages/candidate-info.jsp").forward(req, resp);
             } catch (RegisterException e) {
                 LOG.error(e);
 

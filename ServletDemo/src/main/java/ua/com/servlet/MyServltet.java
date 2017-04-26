@@ -2,7 +2,7 @@ package ua.com.servlet;
 
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
-import ua.com.service.MainServiceImpl;
+import ua.com.Fixtures.MainServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
